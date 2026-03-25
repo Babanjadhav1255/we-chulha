@@ -8,6 +8,7 @@ import ScrollSection from "@/components/ScrollSection";
 import ProductGallery from "@/components/ProductGallery";
 import Testimonials from "@/components/Testimonials";
 import CountUp from "@/components/CountUp";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const stats = [
   { value: "375", label: "cooking sessions from 150 kg" },
@@ -44,6 +45,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
+      <WhatsAppButton />
       {/* Sticky Nav */}
       <nav className="sticky top-0 z-50 glass">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
