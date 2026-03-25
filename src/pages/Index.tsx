@@ -8,6 +8,7 @@ import ScrollSection from "@/components/ScrollSection";
 import ProductGallery from "@/components/ProductGallery";
 import Testimonials from "@/components/Testimonials";
 import CountUp from "@/components/CountUp";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const stats = [
   { value: "375", label: "cooking sessions from 150 kg" },
