@@ -6,47 +6,6 @@
 
 @layer base {
   :root {
-    --background: 40 30% 97%;
-    --foreground: 220 20% 12%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 220 20% 12%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 12%;
-
-    --primary: 24 95% 50%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 160 50% 40%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 40 20% 92%;
-    --muted-foreground: 220 10% 45%;
-
-    --accent: 24 90% 95%;
-    --accent-foreground: 24 95% 30%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 40 20% 88%;
-    --input: 40 20% 88%;
-    --ring: 24 95% 50%;
-
-    --radius: 0.75rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
     --background: 220 20% 8%;
     --foreground: 40 20% 95%;
 
@@ -75,6 +34,8 @@
     --input: 220 15% 20%;
     --ring: 24 95% 55%;
 
+    --radius: 0.75rem;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -98,5 +59,43 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: hsla(220, 20%, 12%, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsla(220, 15%, 30%, 0.3);
+  }
+
+  .glass-light {
+    background: hsla(220, 20%, 20%, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid hsla(220, 15%, 30%, 0.2);
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 30px -5px hsla(24, 95%, 55%, 0.4),
+                0 0 60px -10px hsla(24, 95%, 55%, 0.2);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 40px hsla(24, 95%, 55%, 0.5),
+                 0 0 80px hsla(24, 95%, 55%, 0.2);
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
   }
 }
