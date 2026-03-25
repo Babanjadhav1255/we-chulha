@@ -223,6 +223,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials & Instagram Video */}
+      <Testimonials />
+
       {/* Instagram CTA */}
       <section className="px-4 py-12">
         <div className="mx-auto max-w-3xl">
