@@ -159,6 +159,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Product Gallery */}
+      <ProductGallery />
+
       {/* Why WE Chulha */}
       <section id="why" className="px-4 py-20 md:py-28">
         <div className="mx-auto max-w-5xl">
