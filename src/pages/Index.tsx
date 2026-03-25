@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import Hero3D from "@/components/Hero3D";
 import TiltCard from "@/components/TiltCard";
 import ScrollSection from "@/components/ScrollSection";
+import ProductGallery from "@/components/ProductGallery";
+import Testimonials from "@/components/Testimonials";
 import CountUp from "@/components/CountUp";
 
 const stats = [
