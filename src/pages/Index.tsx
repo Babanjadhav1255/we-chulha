@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import Hero3D from "@/components/Hero3D";
 import TiltCard from "@/components/TiltCard";
 import ScrollSection from "@/components/ScrollSection";
+import ProductGallery from "@/components/ProductGallery";
+import Testimonials from "@/components/Testimonials";
 import CountUp from "@/components/CountUp";
 
 const stats = [
@@ -157,6 +159,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Product Gallery */}
+      <ProductGallery />
+
       {/* Why WE Chulha */}
       <section id="why" className="px-4 py-20 md:py-28">
         <div className="mx-auto max-w-5xl">
@@ -217,6 +222,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials & Instagram Video */}
+      <Testimonials />
 
       {/* Instagram CTA */}
       <section className="px-4 py-12">
