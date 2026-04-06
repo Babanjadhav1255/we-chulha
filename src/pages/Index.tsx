@@ -20,6 +20,18 @@ import {
   TESTIMONIALS, STEPS, FOR_CARDS, FAQS, TRUST_STATS, GALLERY_SLOTS,
 } from "@/lib/constants";
 
+// Image imports
+import stoveHero from "@/assets/stove-hero.jpg";
+import pelletsCloseup from "@/assets/pellets-closeup.jpg";
+import kitchenSetup from "@/assets/kitchen-setup.jpg";
+import stoveFlame from "@/assets/stove-flame.jpg";
+import happyCustomer from "@/assets/happy-customer.jpg";
+import stoveInstalled from "@/assets/stove-installed.jpg";
+import missionVillage from "@/assets/mission-village.jpg";
+import missionCommunity from "@/assets/mission-community.jpg";
+
+const GALLERY_IMAGES = [stoveHero, stoveFlame, kitchenSetup, pelletsCloseup, stoveInstalled, happyCustomer];
+
 // ============================================================================
 // NAV
 // ============================================================================
