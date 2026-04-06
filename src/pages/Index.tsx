@@ -21,16 +21,26 @@ import {
 } from "@/lib/constants";
 
 // Image imports
-import stoveHero from "@/assets/stove-hero.jpg";
-import pelletsCloseup from "@/assets/pellets-closeup.jpg";
-import kitchenSetup from "@/assets/kitchen-setup.jpg";
-import stoveFlame from "@/assets/stove-flame.jpg";
-import happyCustomer from "@/assets/happy-customer.jpg";
-import stoveInstalled from "@/assets/stove-installed.jpg";
-import missionVillage from "@/assets/mission-village.jpg";
-import missionCommunity from "@/assets/mission-community.jpg";
+import chulhaTop from "@/assets/chulha-top.jpeg";
+import chulhaFlame from "@/assets/chulha-flame.jpeg";
+import chulhaKitchen from "@/assets/chulha-kitchen.jpeg";
+import chulhaWok from "@/assets/chulha-wok.jpeg";
+import chulhaFront from "@/assets/chulha-front.jpeg";
+import chulhaGlow from "@/assets/chulha-glow.jpeg";
+import chulhaSide from "@/assets/chulha-side.jpeg";
+import chulhaFire from "@/assets/chulha-fire.jpeg";
 
-const GALLERY_IMAGES = [stoveHero, stoveFlame, kitchenSetup, pelletsCloseup, stoveInstalled, happyCustomer];
+// Aliases for backward compat
+const stoveHero = chulhaFront;
+const stoveFlame = chulhaFlame;
+const kitchenSetup = chulhaKitchen;
+const pelletsCloseup = chulhaTop;
+const happyCustomer = chulhaWok;
+const stoveInstalled = chulhaGlow;
+const missionVillage = chulhaFire;
+const missionCommunity = chulhaSide;
+
+const GALLERY_IMAGES = [chulhaFront, chulhaFlame, chulhaKitchen, chulhaTop, chulhaWok, chulhaGlow, chulhaSide, chulhaFire];
 
 // ============================================================================
 // NAV
