@@ -461,7 +461,7 @@ function Gallery() {
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
           {GALLERY_SLOTS.map((slot, i) => (
             <Reveal key={slot.label} delay={i * 80}>
-              <MediaPlaceholder label={slot.label} aspect={slot.aspect as "square" | "landscape"} src={GALLERY_IMAGES[idx]} className="shadow-lg hover:shadow-xl hover:shadow-primary/5 transition-shadow" />
+              <MediaPlaceholder label={slot.label} aspect={slot.aspect as "square" | "landscape"} src={GALLERY_IMAGES[i]} className="shadow-lg hover:shadow-xl hover:shadow-primary/5 transition-shadow" />
             </Reveal>
           ))}
         </div>
