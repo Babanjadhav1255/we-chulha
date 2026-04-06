@@ -147,7 +147,7 @@ function Hero() {
         {/* Hero product placeholder */}
         <Reveal delay={400}>
           <div className="mt-12 mx-auto max-w-md">
-            <MediaPlaceholder label="WE Chulha — Hero Product Image" aspect="square" className="shadow-2xl shadow-primary/10" />
+            <MediaPlaceholder label="WE Chulha — Hero Product Image" aspect="square" src={stoveHero} className="shadow-2xl shadow-primary/10" />
           </div>
         </Reveal>
 
@@ -461,7 +461,7 @@ function Gallery() {
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
           {GALLERY_SLOTS.map((slot, i) => (
             <Reveal key={slot.label} delay={i * 80}>
-              <MediaPlaceholder label={slot.label} aspect={slot.aspect as "square" | "landscape"} className="shadow-lg hover:shadow-xl hover:shadow-primary/5 transition-shadow" />
+              <MediaPlaceholder label={slot.label} aspect={slot.aspect as "square" | "landscape"} src={GALLERY_IMAGES[idx]} className="shadow-lg hover:shadow-xl hover:shadow-primary/5 transition-shadow" />
             </Reveal>
           ))}
         </div>
@@ -494,7 +494,16 @@ function VideoDemo() {
             </div>
           </Reveal>
           <Reveal delay={200}>
-            <MediaPlaceholder label="Product Demo Video — Replace with video" aspect="video" className="shadow-2xl" />
+            <div className="relative overflow-hidden rounded-2xl aspect-video shadow-2xl">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="WE Chulha Demo Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 h-full w-full border-0"
+                loading="lazy"
+              />
+            </div>
           </Reveal>
         </div>
       </div>
@@ -562,7 +571,7 @@ function WhoItsFor() {
             <Reveal key={card.title} delay={idx * 100}>
               <Card className="h-full border-0 glass shadow-lg hover:shadow-xl hover:shadow-primary/5 transition-all hover:-translate-y-1">
                 <CardContent className="p-6">
-                  <MediaPlaceholder label={card.title} aspect="landscape" className="mb-4" />
+                  <MediaPlaceholder label={card.title} aspect="landscape" src={[kitchenSetup, stoveFlame, stoveHero, stoveInstalled][idx]} className="mb-4" />
                   <h3 className="font-['Space_Grotesk'] text-lg font-semibold text-foreground mb-1">{card.title}</h3>
                   <p className="text-sm text-muted-foreground mb-4">{card.desc}</p>
                   <ul className="space-y-2">
@@ -620,8 +629,8 @@ function Mission() {
           </Reveal>
           <Reveal delay={200}>
             <div className="space-y-4">
-              <MediaPlaceholder label="Mission — Village Impact" aspect="landscape" className="shadow-xl" />
-              <MediaPlaceholder label="Mission — Community" aspect="landscape" className="shadow-xl" />
+              <MediaPlaceholder label="Mission — Village Impact" aspect="landscape" src={missionVillage} className="shadow-xl" />
+              <MediaPlaceholder label="Mission — Community" aspect="landscape" src={missionCommunity} className="shadow-xl" />
             </div>
           </Reveal>
         </div>
@@ -719,7 +728,7 @@ function TestimonialsSection() {
             <Reveal key={t.author} delay={idx * 100}>
               <Card className={`h-full border-0 glass shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 ${idx === 3 ? "sm:col-span-2 lg:col-span-1 border border-primary/20" : ""}`}>
                 <CardContent className="flex flex-col gap-3 p-6">
-                  <MediaPlaceholder label={t.author} aspect="square" className="mb-2" />
+                  <MediaPlaceholder label={t.author} aspect="square" src={[kitchenSetup, happyCustomer, stoveInstalled, stoveHero][idx]} className="mb-2" />
                   <span className="inline-block self-start rounded-full bg-primary/20 px-3 py-0.5 text-xs font-semibold text-primary">{t.badge}</span>
                   <div className="flex gap-0.5">
                     {Array.from({ length: t.stars }).map((_, i) => (
