@@ -97,7 +97,7 @@ function Nav() {
 // ============================================================================
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Animated bg circles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 h-[600px] w-[600px] rounded-full bg-primary/5 blur-3xl animate-pulse" />
@@ -146,14 +146,14 @@ function Hero() {
 
         {/* Hero product placeholder */}
         <Reveal delay={400}>
-          <div className="mt-12 mx-auto max-w-md">
+          <div className="mt-8 mx-auto max-w-md">
             <MediaPlaceholder label="WE Chulha — Hero Product Image" aspect="square" src={stoveHero} className="shadow-2xl shadow-primary/10" />
           </div>
         </Reveal>
 
         {/* Mini stats */}
         <Reveal delay={500}>
-          <div className="mt-10 mx-auto flex max-w-lg items-center justify-center gap-6 rounded-2xl glass p-5">
+          <div className="mt-6 mx-auto flex max-w-lg items-center justify-center gap-6 rounded-2xl glass p-5">
             <div className="flex flex-col items-center">
               <Flame className="h-5 w-5 text-primary mb-1" />
               <span className="text-xs text-muted-foreground">Cost per cook</span>
@@ -477,7 +477,7 @@ function VideoDemo() {
   return (
     <section className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-5xl">
-        <div className="grid gap-8 md:grid-cols-2 items-center">
+        <div className="grid gap-6 md:grid-cols-2 items-center">
           <Reveal>
             <div className="space-y-6">
               <h2 className="font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
@@ -598,7 +598,7 @@ function Mission() {
   return (
     <section className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-5xl">
-        <div className="grid gap-8 md:grid-cols-2 items-center">
+        <div className="grid gap-6 md:grid-cols-2 items-center">
           <Reveal>
             <div className="space-y-6">
               <span className="inline-flex items-center gap-2 rounded-full glass-light px-4 py-1.5 text-xs font-semibold text-accent-foreground">
