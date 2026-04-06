@@ -125,7 +125,7 @@ function Hero() {
         </Reveal>
 
         <Reveal delay={250}>
-          <p className="mx-auto mb-8 max-w-xl text-sm text-muted-foreground">
+          <p className="mx-auto mb-5 max-w-xl text-sm text-muted-foreground">
             Join 500+ households and businesses across India. Premium quality, zero smoke, maximum savings.
           </p>
         </Reveal>
@@ -209,7 +209,7 @@ function TrustBar() {
     <section ref={ref} className="px-4 py-16">
       <div className="mx-auto max-w-5xl">
         <Reveal>
-          <p className="mb-8 text-center text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+          <p className="mb-5 text-center text-sm font-semibold uppercase tracking-widest text-muted-foreground">
             Why customers trust WE Chulha
           </p>
         </Reveal>
@@ -246,11 +246,11 @@ function SavingsCalc() {
   }, [sessions]);
 
   return (
-    <section id="savings" className="px-4 py-20 md:py-28">
+    <section id="savings" className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-4xl">
         <Reveal>
           <SectionLabel>Savings Calculator</SectionLabel>
-          <h2 className="mb-10 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-6 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
             See Your <span className="text-primary">Potential Savings</span>
           </h2>
         </Reveal>
@@ -259,7 +259,7 @@ function SavingsCalc() {
           <Card className="border-0 glass shadow-xl overflow-hidden">
             <CardContent className="p-6 md:p-10">
               {/* Slider */}
-              <div className="mb-8">
+              <div className="mb-5">
                 <label className="block text-sm font-medium text-muted-foreground mb-3">Cooking sessions per day</label>
                 <div className="flex items-center gap-4">
                   <span className="text-sm text-muted-foreground">1</span>
@@ -366,7 +366,7 @@ function SavingsCalc() {
 // ============================================================================
 function PackageSection() {
   return (
-    <section id="package" className="px-4 py-20 md:py-28">
+    <section id="package" className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <SectionLabel>Starter Kit</SectionLabel>
@@ -450,11 +450,11 @@ function PackageSection() {
 // ============================================================================
 function Gallery() {
   return (
-    <section id="gallery" className="px-4 py-20 md:py-28">
+    <section id="gallery" className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <SectionLabel>Gallery</SectionLabel>
-          <h2 className="mb-14 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-5 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
             See <span className="text-primary">WE Chulha</span> in Action
           </h2>
         </Reveal>
@@ -475,7 +475,7 @@ function Gallery() {
 // ============================================================================
 function VideoDemo() {
   return (
-    <section className="px-4 py-20 md:py-28">
+    <section className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-5xl">
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <Reveal>
@@ -525,11 +525,11 @@ function WhyUs() {
   };
 
   return (
-    <section id="why" className="px-4 py-20 md:py-28">
+    <section id="why" className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <SectionLabel>Why Choose Us</SectionLabel>
-          <h2 className="mb-14 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-5 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
             Six Reasons to <span className="text-primary">Switch Today</span>
           </h2>
         </Reveal>
@@ -558,11 +558,11 @@ function WhyUs() {
 // ============================================================================
 function WhoItsFor() {
   return (
-    <section className="px-4 py-20 md:py-28">
+    <section className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <SectionLabel>Use Cases</SectionLabel>
-          <h2 className="mb-14 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-5 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
             Who Can <span className="text-primary">Benefit?</span>
           </h2>
         </Reveal>
@@ -596,7 +596,7 @@ function WhoItsFor() {
 // ============================================================================
 function Mission() {
   return (
-    <section className="px-4 py-20 md:py-28">
+    <section className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-5xl">
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <Reveal>
@@ -644,11 +644,11 @@ function Mission() {
 // ============================================================================
 function HowItWorks() {
   return (
-    <section className="px-4 py-20 md:py-28">
+    <section className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <SectionLabel>Getting Started</SectionLabel>
-          <h2 className="mb-14 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-5 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
             Get Started in <span className="text-primary">5 Steps</span>
           </h2>
         </Reveal>
@@ -680,11 +680,11 @@ function HowItWorks() {
 // ============================================================================
 function UsageGuide() {
   return (
-    <section id="guide" className="px-4 py-20 md:py-28">
+    <section id="guide" className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-4xl">
         <Reveal>
           <SectionLabel>Usage Guide</SectionLabel>
-          <h2 className="mb-14 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-5 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
             How to Use <span className="text-primary">Our Pellets</span>
           </h2>
         </Reveal>
@@ -715,11 +715,11 @@ function UsageGuide() {
 // ============================================================================
 function TestimonialsSection() {
   return (
-    <section className="px-4 py-20 md:py-28">
+    <section className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <SectionLabel>Testimonials</SectionLabel>
-          <h2 className="mb-14 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-5 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
             What Our <span className="text-primary">Customers Say</span>
           </h2>
         </Reveal>
@@ -755,11 +755,11 @@ function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="px-4 py-20 md:py-28">
+    <section id="faq" className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-3xl">
         <Reveal>
           <SectionLabel>FAQ</SectionLabel>
-          <h2 className="mb-14 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-5 text-center font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
             Frequently Asked <span className="text-primary">Questions</span>
           </h2>
         </Reveal>
@@ -793,17 +793,17 @@ function FAQ() {
 // ============================================================================
 function Contact() {
   return (
-    <section id="contact" className="px-4 py-20 md:py-28">
+    <section id="contact" className="px-4 py-12 md:py-16">
       <div className="mx-auto max-w-4xl text-center">
         <Reveal>
           <SectionLabel>Get In Touch</SectionLabel>
-          <h2 className="mb-10 font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-6 font-['Space_Grotesk'] text-3xl font-bold text-foreground md:text-4xl">
             Contact Us <span className="text-primary">Today</span>
           </h2>
         </Reveal>
 
         <Reveal delay={100}>
-          <div className="mb-10 grid gap-4 sm:grid-cols-3">
+          <div className="mb-6 grid gap-4 sm:grid-cols-3">
             <a href={`tel:${PHONE}`} className="flex flex-col items-center gap-3 rounded-xl glass p-6 transition hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1">
               <Phone className="h-6 w-6 text-primary" />
               <p className="text-sm font-semibold text-foreground">Call Us</p>
@@ -850,7 +850,7 @@ function Footer() {
   return (
     <footer className="border-t border-border/30 glass px-4 py-10">
       <div className="mx-auto max-w-5xl">
-        <div className="grid gap-8 sm:grid-cols-3 mb-8">
+        <div className="grid gap-8 sm:grid-cols-3 mb-5">
           <div>
             <div className="flex items-center gap-2 mb-3">
               <Flame className="h-6 w-6 text-primary" />
