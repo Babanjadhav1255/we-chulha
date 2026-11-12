@@ -1,6 +1,6 @@
-export const PHONE = "+919503903366";
-export const PHONE_DISPLAY = "+91 9503903366";
-export const WA_BASE = "https://wa.me/919503903366?text=Hi%2C%20I%27m%20interested%20in%20WE%20Chulha.%20Please%20share%20details.";
+export const PHONE = "+918600181144";
+export const PHONE_DISPLAY = "+91 86001 81144";
+export const WA_BASE = "https://wa.me/918600181144?text=Hi%2C%20WE%20Chulha%20ke%20baare%20mein%20jaankari%20chahiye.%20Free%20demo%20ke%20liye%20baat%20karni%20hai.";
 export const EMAIL = "blessedtraders04@gmail.com";
 export const INSTA = "https://www.instagram.com/we.chulha/";
 
@@ -15,17 +15,17 @@ export const NAV_LINKS = [
 ];
 
 export const INCLUDES = [
-  "WE Chulha stove (1 yr warranty)",
-  "150 kg biomass pellets (₹2,250 value)",
-  "6V 5Ah battery (3 yr warranty)",
+  "WE Chulha stove (3 yr warranty)",
+  "30 kg biomass pellets (₹450 value)",
+  "6V 5Ah battery and electronics (1 yr warranty)",
   "Battery charger included",
 ];
 
 export const WHY_CARDS = [
   { icon: "bolt", title: "Works Without Electricity", desc: "Battery-powered fan keeps cooking even during power cuts. No interruption to your business." },
   { icon: "wind", title: "Very Low Smoke", desc: "Forced airflow combustion. Healthier for staff and customers. Ideal for indoor use." },
-  { icon: "leaf", title: "Carbon Neutral", desc: "Biomass pellets are a renewable fuel. Reduce your carbon footprint vs LPG." },
-  { icon: "trending_down", title: "60% Cost Savings", desc: "Cook for just ₹6 per session vs ₹10 with LPG. Save thousands every month." },
+  { icon: "leaf", title: "Lower Carbon Impact", desc: "Biomass pellets are a renewable fuel, with a lower carbon impact than fossil fuels like LPG." },
+  { icon: "trending_down", title: "About 40% Cost Savings", desc: "Cook for just ₹6 per session vs ₹9–10 with LPG. Lower fuel cost every single day." },
   { icon: "shield", title: "Safety Certified", desc: "Built with safety-first design. No gas leaks, no explosions, peace of mind." },
   { icon: "check", title: "Fuel Always Available", desc: "No cylinder booking, no wait times. Pellets at ₹12–15/kg from local vendors." },
 ];
@@ -79,7 +79,7 @@ export const FOR_CARDS = [
   {
     title: "Restaurants & Hotels",
     desc: "High-volume commercial kitchens",
-    points: ["Reduce monthly fuel bill by 60%", "Zero smoke for better kitchen environment", "Reliable fuel supply, no cylinder waiting"],
+    points: ["Reduce fuel cost by about 40%", "Low smoke for a better kitchen environment", "Reliable fuel supply, no cylinder waiting"],
   },
   {
     title: "Street Food Vendors",
@@ -99,19 +99,19 @@ export const FOR_CARDS = [
 ];
 
 export const FAQS = [
-  { question: "How long does 150 kg of pellets last?", answer: "150 kg of pellets provide approximately 375 cooking sessions. For a household cooking 2-3 times a day, this lasts about 4-6 months. For commercial use, it depends on daily cooking volume." },
+  { question: "How long does 30 kg of pellets last?", answer: "30 kg of pellets provide approximately 75 cooking sessions (about 400 g per session, roughly 30–40 minutes of cooking). For a commercial kitchen, how long it lasts depends on daily cooking volume. Refills are about ₹15 per kg." },
   { question: "Where can I buy pellets?", answer: "Biomass pellets are available from local vendors at ₹12–15/kg. We also provide pellet supply connections when you purchase the stove." },
   { question: "Does it work without electricity?", answer: "Yes! The WE Chulha uses a 6V rechargeable battery to power the fan. A single charge lasts for multiple cooking sessions, and a charger is included in the kit." },
-  { question: "How does it compare to LPG?", answer: "WE Chulha costs approximately ₹6 per cooking session vs ₹9-10 for LPG. That's a 40-60% savings. Plus, pellets are always available — no booking or waiting for cylinders." },
-  { question: "What is the warranty?", answer: "The stove comes with a 1-year replacement warranty. The battery has a 3-year warranty. We also provide ongoing support and maintenance guidance." },
+  { question: "How does it compare to LPG?", answer: "WE Chulha costs approximately ₹6 per cooking session vs ₹9-10 for LPG. That's about 40% savings. Plus, pellets are always available — no booking or waiting for cylinders." },
+  { question: "What is the warranty?", answer: "The WE Chulha stove comes with a 3-year warranty. The battery and electronics have a 1-year warranty. We also provide ongoing support and maintenance guidance." },
   { question: "Is it safe for indoor use?", answer: "Absolutely. The forced airflow combustion system produces very low smoke, making it ideal for indoor kitchens. It's much safer than traditional chulhas and eliminates gas leak risks." },
 ];
 
 export const TRUST_STATS = [
-  { value: 500, label: "Happy Customers", suffix: "+" },
-  { value: 60, label: "Avg. Savings", suffix: "%" },
-  { value: 375, label: "Sessions per 150kg", suffix: "" },
-  { value: 3, label: "Year Warranty", suffix: " Yr" },
+  { value: 6, label: "Rupees per cooking session", suffix: "" },
+  { value: 40, label: "Approx. savings vs LPG", suffix: "%" },
+  { value: 75, label: "Sessions per 30kg", suffix: "" },
+  { value: 3, label: "Year stove warranty", suffix: " Yr" },
 ];
 
 export const GALLERY_SLOTS = [

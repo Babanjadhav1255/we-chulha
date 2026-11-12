@@ -124,19 +124,19 @@ function Hero() {
 
         <Reveal delay={100}>
           <h1 className="mb-6 font-['Space_Grotesk'] text-4xl font-bold leading-tight tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Cook for <span className="text-primary">₹6</span>. LPG costs <span className="text-muted-foreground line-through">₹10</span>.
+            Cook for <span className="text-primary">₹6</span>. LPG costs <span className="text-muted-foreground line-through">₹9–10</span>.
           </h1>
         </Reveal>
 
         <Reveal delay={200}>
           <p className="mx-auto mb-4 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            Save 60% on cooking fuel with WE Chulha's eco-friendly pellet stove
+            Save about 40% on cooking fuel with WE Chulha's eco-friendly pellet stove
           </p>
         </Reveal>
 
         <Reveal delay={250}>
           <p className="mx-auto mb-5 max-w-xl text-sm text-muted-foreground">
-            Join 500+ households and businesses across India. Premium quality, zero smoke, maximum savings.
+            Join the growing family of WE Chulha kitchens across India. Premium quality, low smoke, maximum savings.
           </p>
         </Reveal>
 
@@ -173,7 +173,7 @@ function Hero() {
             <div className="flex flex-col items-center">
               <TrendingDown className="h-5 w-5 text-primary mb-1" />
               <span className="text-xs text-muted-foreground">Savings vs LPG</span>
-              <span className="font-['Space_Grotesk'] text-lg font-bold text-primary">60%</span>
+              <span className="font-['Space_Grotesk'] text-lg font-bold text-primary">~40%</span>
             </div>
             <div className="h-8 w-px bg-border/30" />
             <div className="flex flex-col items-center">
@@ -192,7 +192,7 @@ function Hero() {
 // ECO STRIP
 // ============================================================================
 function EcoStrip() {
-  const benefits = ["Zero Smoke", "Renewable Fuel", "Carbon Neutral", "No Harmful Emissions", "Sustainable Cooking", "Bio-Degradable Pellets"];
+  const benefits = ["Low Smoke", "Renewable Fuel", "Lower Carbon Impact", "Cleaner Cooking", "Sustainable Cooking", "Bio-Degradable Pellets"];
   const repeated = [...benefits, ...benefits];
 
   return (
@@ -409,16 +409,12 @@ function PackageSection() {
                   <h3 className="font-['Space_Grotesk'] text-lg font-semibold text-foreground mb-3">Warranty Coverage</h3>
                   <div className="flex gap-4">
                     <div className="flex-1 rounded-lg glass-light p-3 text-center">
-                      <p className="text-lg font-bold text-primary">1 Year</p>
-                      <p className="text-xs text-muted-foreground">Full Replacement</p>
-                    </div>
-                    <div className="flex-1 rounded-lg glass-light p-3 text-center">
-                      <p className="text-lg font-bold text-primary">2 Years</p>
-                      <p className="text-xs text-muted-foreground">Free Repairs</p>
-                    </div>
-                    <div className="flex-1 rounded-lg glass-light p-3 text-center">
                       <p className="text-lg font-bold text-primary">3 Years</p>
-                      <p className="text-xs text-muted-foreground">Support</p>
+                      <p className="text-xs text-muted-foreground">WE Chulha Stove</p>
+                    </div>
+                    <div className="flex-1 rounded-lg glass-light p-3 text-center">
+                      <p className="text-lg font-bold text-primary">1 Year</p>
+                      <p className="text-xs text-muted-foreground">Battery &amp; Electronics</p>
                     </div>
                   </div>
                 </div>
@@ -426,12 +422,12 @@ function PackageSection() {
               <div className="space-y-6">
                 <div className="grid grid-cols-3 gap-4">
                   <div className="rounded-lg glass-light p-4 text-center">
-                    <p className="text-2xl font-bold text-primary font-['Space_Grotesk']">500+</p>
-                    <p className="text-xs text-muted-foreground">Happy Customers</p>
+                    <p className="text-2xl font-bold text-primary font-['Space_Grotesk']">₹6</p>
+                    <p className="text-xs text-muted-foreground">Per Cooking Session</p>
                   </div>
                   <div className="rounded-lg glass-light p-4 text-center">
-                    <p className="text-2xl font-bold text-primary font-['Space_Grotesk']">60%</p>
-                    <p className="text-xs text-muted-foreground">Average Savings</p>
+                    <p className="text-2xl font-bold text-primary font-['Space_Grotesk']">~40%</p>
+                    <p className="text-xs text-muted-foreground">Savings vs LPG</p>
                   </div>
                   <div className="rounded-lg glass-light p-4 text-center">
                     <p className="text-2xl font-bold text-primary font-['Space_Grotesk']">Pan India</p>
@@ -494,7 +490,7 @@ function VideoDemo() {
                 Watch How It <span className="text-primary">Works</span>
               </h2>
               <div className="space-y-3">
-                {["10-second ignition", "Zero smoke emission", "100% bio-fuel", "Safety certified"].map((item, i) => (
+                {["10-second ignition", "Low smoke emission", "100% bio-fuel", "Safety certified"].map((item, i) => (
                   <div key={item} className="flex items-center gap-3">
                     <Check className="h-5 w-5 text-primary" />
                     <span className="text-foreground">{item}</span>
@@ -838,8 +834,8 @@ function Contact() {
         <Reveal delay={200}>
           <Card className="border-0 glass overflow-hidden shadow-xl">
             <CardContent className="flex flex-col items-center gap-4 p-8">
-              <h3 className="font-['Space_Grotesk'] text-xl font-bold text-foreground">Ready to Save 60% on Fuel?</h3>
-              <p className="text-sm text-muted-foreground">Join 500+ customers making the switch to sustainable cooking</p>
+              <h3 className="font-['Space_Grotesk'] text-xl font-bold text-foreground">Ready to Save About 40% on Fuel?</h3>
+              <p className="text-sm text-muted-foreground">Join the kitchens making the switch to sustainable cooking</p>
               <Button asChild size="lg" className="rounded-full bg-[#25D366] px-10 text-lg font-bold text-white hover:bg-[#1ebe5b] gap-2">
                 <a href={WA_BASE} target="_blank" rel="noopener noreferrer"><MessageCircle className="h-5 w-5" />WhatsApp Us</a>
               </Button>
@@ -962,7 +958,7 @@ function StructuredData() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "WE Chulha",
-    description: "Sustainable, eco-friendly pellet stove for cooking. Save 60% on fuel costs with zero smoke emissions.",
+    description: "Sustainable, eco-friendly pellet stove for cooking. Save about 40% on fuel costs with low smoke emissions.",
     url: "https://we-chulha-magic.lovable.app",
     telephone: PHONE,
     email: EMAIL,
